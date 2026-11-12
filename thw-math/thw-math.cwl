@@ -274,6 +274,8 @@
 
 \mywarning{warning}
 \removedisplaybelowskip
+\premidfigure
+\postmidfigure
 \refcustomitem{text}
 
 \quotimplies{statement1}{statement2}
