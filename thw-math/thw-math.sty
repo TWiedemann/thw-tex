@@ -353,6 +353,11 @@
 % \item\removedisplaybelowskip Bla.
 \newcommand{\removedisplaybelowskip}{\addvspace{-\belowdisplayskip}}
 
+%%%% Fix for vertical space in floats https://tex.stackexchange.com/questions/505243/vertical-space-between-theorems-from-a-distant-figure
+\newlength{\fixmidfigure}
+\newcommand{\premidfigure}{\setlength{\fixmidfigure}{\lastskip}\addvspace{-\lastskip}}
+\newcommand{\postmidfigure}{\addvspace{\fixmidfigure}}
+
 % Allows referencing of custom items:
 % \begin{enumerate} \refcustomitem{(X)}\label{it} Bla \end{enumerate} By~\ref{it}
 % Then the reference is printed as "(X)".
